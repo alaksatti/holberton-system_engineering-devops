@@ -1,0 +1,1 @@
+0x00-shell_basics directory explores tasks related to using commands in the shell. 
