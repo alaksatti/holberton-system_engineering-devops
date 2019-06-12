@@ -1,6 +1,2 @@
-drwxrwxr-x 2 vagrant vagrant 4096 Jun 12 16:10 .
-drwxrwxr-x 4 vagrant vagrant 4096 Jun 12 15:50 ..
--rw-rw-r-- 1 vagrant vagrant   67 Jun 12 15:59 0-current_working_directory
--rw-rw-r-- 1 vagrant vagrant   27 Jun 12 16:00 1-listit
--rw-rw-r-- 1 vagrant vagrant    2 Jun 12 16:02 2-bring_me_home
--rw-rw-r-- 1 vagrant vagrant  187 Jun 12 16:09 3-listfiles
+#!/bin/bash
+ls -la
