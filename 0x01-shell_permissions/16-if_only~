@@ -1,3 +1,0 @@
-#!/bin/bash
-
-find / -user guillaume chown betty: hello
