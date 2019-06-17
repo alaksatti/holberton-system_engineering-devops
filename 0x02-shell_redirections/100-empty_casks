@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -empty * | ls -1laR
+find . -type f -empty * | ls -1aR | file
