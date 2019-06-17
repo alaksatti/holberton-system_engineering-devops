@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -nv "$Line%2 ==0"
+grep -nv "$Line%2 ==0" | echo "$Line"
