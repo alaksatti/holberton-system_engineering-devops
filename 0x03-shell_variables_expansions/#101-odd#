@@ -1,2 +1,5 @@
 #!/bin/bash
-xargs -L 1
+
+
+
+read -r line| grep -nv "^line%2 ==0" | echo "$Line"
