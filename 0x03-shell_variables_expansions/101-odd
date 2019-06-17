@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -nr $Line/2 ==1 | sort
+grep -nv "$Line%2 ==0"
