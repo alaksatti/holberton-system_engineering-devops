@@ -1,0 +1,3 @@
+#!/bin/bash
+$WATER | tr 'water' '01234' |$STIR | tr 'stir.' '01234' |  printf "%o" "expr '$((5#$WATER))' + '$((5#$STIR))'"
+
