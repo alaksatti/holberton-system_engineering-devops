@@ -1,0 +1,2 @@
+#!/bin/bash
+echyo $PATH | tr ":" "\n" | wc -l
