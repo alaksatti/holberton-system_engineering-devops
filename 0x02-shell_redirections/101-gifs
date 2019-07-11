@@ -1,2 +1,2 @@
 #!/bin/bash
-find $directory -type f -name "*.gif" | ls -la
+find . -name "*.gif" -type f -printf '%f\n' | rev | cut -f2- -d '.'| rev | sort -fV
