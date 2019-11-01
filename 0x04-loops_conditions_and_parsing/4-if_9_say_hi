@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#print holbertonshool 10 times but on 9 line print hi on new line
+counter=1
+
+while [ $counter -le 10 ];
+do
+    echo "Holberton School"
+
+    if [ $counter -eq 9 ]; then
+	echo "Hi"
+
+    fi
+
+    (( counter++ ))
+done
