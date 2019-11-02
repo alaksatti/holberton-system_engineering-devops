@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# display visitor IP with HTTP status by occurence number for highest to lowest"
+
+awk '{ print $1" " $9 }' apache-access.log | sort | uniq -c | sort -nr
