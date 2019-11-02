@@ -3,9 +3,9 @@
 i=1
 j=0
 
-while [[ j -le 12 ]]; do
+while [[ $j -le 12 ]]; do
     echo "Hour:" $j
-    while [[ i -le 59 ]]; do
+    while [[ $i -le 59 ]]; do
 	echo $i
 	(( i++ ))
     done
