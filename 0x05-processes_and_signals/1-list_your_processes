@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# display current working processes
+ps -aux
