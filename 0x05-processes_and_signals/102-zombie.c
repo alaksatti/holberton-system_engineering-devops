@@ -26,6 +26,6 @@ int main(void)
 		clone_number++;
 	}
 
-	sleep(2);
+	sleep(100);
 	return (0);
 }
