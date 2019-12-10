@@ -1,5 +1,5 @@
 # create file holberton
-file { '/tmp/holberton':
+file { 'holberton':
   ensure	=> file,
   content	=> 'I love Puppet',
   mode		=> '0744',
