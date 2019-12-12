@@ -1,1 +1,3 @@
-sudo nano /etc/apache2/apache2.conf | sudo service apache2 restart 
+#!/usr/bin/env bash
+#commands used to fix apache web server
+sudo nano /etc/apache2/apache2.conf | sudo service apache2 restart
