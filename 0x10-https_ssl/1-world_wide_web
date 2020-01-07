@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Display information about subdomains.
+
+subinfo()
+{
+    poss=(+nocmd +noall +answer)
+    dig "${poss[@]}" "$2.$1" | awk -v subdomain="$2" '{print "The subdomain " subdomain " is a " $4 " record and points to " $5}'
+}
+
+if [ -z "$2" ];
+then
+    default_domains=( 'www' 'lb-01' 'web-01' 'web-02' )
+    for o in "${default_domains[@]}"
+    do
+	subinfo $1 $o
+    done
+else
+    subinfo $1 $2
+fi
