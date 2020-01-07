@@ -12,8 +12,8 @@ then
     default_domains=( 'www' 'lb-01' 'web-01' 'web-02' )
     for o in "${default_domains[@]}"
     do
-	subinfo $1 $o
+	subinfo "$1" "$o"
     done
 else
-    subinfo $1 $2
+    subinfo "$1" "$2"
 fi
