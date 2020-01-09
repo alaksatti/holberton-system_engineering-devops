@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Fix container so that Nginx is running as the nginx us
+netstat -tunlp | grep 8080 | awk '{print $NF}' | cut -d'/' -f2 | xargs kill
+chown -R nginx:nginx /etc/nginx/nginx.conf
+chmod 644 /etc/nginx/nginx.conf
+sed -i 's/80 default/8080 default/' /etc/nginx/sites-available/default
+sudo -u nginx bash -c 'service nginx restart'
+
