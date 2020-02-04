@@ -18,9 +18,9 @@ def employee_info(uid):
         task_list = []
         for task in wanted_tasks:
             task_list.append({'username': employee_username,
-                          'name': employee_username,
-                          'completed': task.get('completed'),
-                          'title': task.get('title')})
+                              'name': employee_username,
+                              'completed': task.get('completed'),
+                              'title': task.get('title')})
 
         json_f = {str(employee_id): task_list}
 
