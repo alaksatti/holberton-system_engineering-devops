@@ -12,5 +12,6 @@ def top_ten(sr_input):
     if subreddit.status_code != 200:
         print('None')
 
-    for list_item in subreddit.json().get('data').get('children'):
-        print(list_item.get('data').get('title'))
+    else:
+        for list_item in subreddit.json().get('data').get('children'):
+            print(list_item.get('data').get('title'))
