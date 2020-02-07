@@ -5,7 +5,7 @@ url = 'https://www.reddit.com'
 headers = {'User-Agent': 'alaksatti'}
 
 
-def recurse(sr_input, hot_list=[], next_page=None):
+def count_words(sr_input, word_list=[], next_page=None):
     '''recursive function to return list of hot articles'''
     subreddit_page = url + '/r/' + sr_input + '/hot.json'
 
