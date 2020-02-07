@@ -19,7 +19,7 @@ def recurse(sr_input, hot_list=[], next_page=None):
     next_page = subreddit.json().get('data').get('after')
 
     for e in list_elements:
-         hot_list.append(e.get('data').get('title'))
+        hot_list.append(e.get('data').get('title'))
     if next_page:
         return recurse(sr_input, hot_list, next_page)
     return hot_list
