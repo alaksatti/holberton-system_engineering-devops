@@ -23,3 +23,4 @@ file { '/var/www/html/wp-includes/class-wp-locale.phpp':
 ## Corrective and preventative measures:<br>
 Important preventative measures that can be taken to ensure an error like this does not occur again involves testing new code before deployment. Improving the process to allow for multiple tests to be conducted before deployment minimizes the chance for errors like this one. Tasks that can be done to address the issue involve creating multiple layers of testing, testing done by multiple people, and utilizing versions of the site before deployment so that in the case an error occurs causing an outage a backup/previous version would be launched.<br><br><br>
 
+![meme, test before you deploy](https://cdn-images-1.medium.com/max/1600/1*b-M0tsI9d29JcdoO2Zj6Rw.png)
