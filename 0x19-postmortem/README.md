@@ -1,6 +1,6 @@
 # Postmortem:
 
-(https://cdn-images-1.medium.com/max/1600/1*spPhbypXBVdCYBaLai-Cxw.png) <br><br><br>
+![meme, deploy before testing what could go wrong](https://cdn-images-1.medium.com/max/1600/1*spPhbypXBVdCYBaLai-Cxw.png) <br><br><br>
 
 ## Summary:<br>
 On 02/18/2020 at 10:04 am PST a Wordpress website was down for approximately 17 minutes. During this time 100% of the website was unresponsive where all users experienced an internal server error (status code of 500). The root cause of the outage was a typographical error of a file name in which the file extension was incorrectly labeled as .phpp instead of .php . The website was running smoothly again 10:22 pm.<br><br>
