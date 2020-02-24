@@ -15,11 +15,11 @@ Timeline:<br>
 02/18/2020 at 10:18 am PST: Changes were checked by QA team before deployment to make sure issues were resolved.<br>
 02/18/2020 at 10:21 am PST: Changes were deployed on all servers and website was restored and completely responsive.<br><br>
 Root Cause & Resolution:<br>
-The root cause of the issue is a typographical error in which the file /var/www/html/wp-includes/class-wp-locale.phpp was required instead of the file /var/www/html/wp-includes/class-wp-locale.php . The error comes from the file extensions where .phpp was incorrectly specified instead of .php . The .phpp file did not exist causing the 500 status code error and resulting in the total outage. A puppet script was created to correct the typographical error, tested properly, and then deployed on all servers within 17 minutes of the outage. A copy of the puppet script can be found below:<br>
+The root cause of the issue is a typographical error in which the file /var/www/html/wp-includes/class-wp-locale.phpp was required instead of the file /var/www/html/wp-includes/class-wp-locale.php . The error comes from the file extensions where .phpp was incorrectly specified instead of .php . The .phpp file did not exist causing the 500 status code error and resulting in the total outage. A puppet script was created to correct the typographical error, tested properly, and then deployed on all servers within 17 minutes of the outage. A copy of the puppet script can be found below:<br><br>
 file { '/var/www/html/wp-includes/class-wp-locale.phpp':
       ensure => present,
       source => '/var/www/html/wp-includes/class-wp-locale.php',
-}<br><br><br>
+}<br><br>
 Corrective and preventative measures:<br>
 Important preventative measures that can be taken to ensure an error like this does not occur again involves testing new code before deployment. Improving the process to allow for multiple tests to be conducted before deployment minimizes the chance for errors like this one. Tasks that can be done to address the issue involve creating multiple layers of testing, testing done by multiple people, and utilizing versions of the site before deployment so that in the case an error occurs causing an outage a backup/previous version would be launched.<br><br><br>
 
